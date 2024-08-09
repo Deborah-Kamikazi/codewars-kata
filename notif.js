@@ -2,13 +2,10 @@
   
   
   
-  
-  
-  function takeUmbrella(weather, chance) {
-let compare = weather === 'rainy'||weather === 'cloudy'&& chance> 0.20 ? true :weather === "sunny" && chance > 0.5 ? true: false
-return compare;
-   
+  function reverse(arr) {
+ 
+    return arr.map((el,i,me)=> me[me.length-1 -i])
+    
   }
-  console.log(takeUmbrella('sunny', 0.9))
 
-//   weather === "sunny" ||weather === 'rainy'&& chance <0.20 ? "true":"false"
+  console.log(reverse([1,3,4,5,4,6]))
